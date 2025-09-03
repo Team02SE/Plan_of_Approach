@@ -1,0 +1,77 @@
+\documentclass[11pt, a4paper, titlepage]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{float}
+\usepackage[font=smaller,labelfont=bf,]{caption}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{array} 
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[margin=3cm]{geometry}
+\usepackage{glossaries}	
+\usepackage{xcolor}
+
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=blue,      
+	urlcolor=blue,
+	citecolor=blue,
+}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Team 2 portfolio}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{Team 2 - Complex project plan of approach}
+
+\begin{document}
+	
+	\title{Complex project plan of approach}
+	\author{
+		Simon Potocnak \texttt{00092651}
+	\and 
+		Michal Jakubowski \texttt{00081989}
+	\and 
+		Ivan Karev \texttt{00092432}
+	\and 
+		Dezső-Dániel Bartha \texttt{00092909 }
+	}
+	\date{\parbox{\linewidth}{\centering%
+			\today\endgraf\bigskip
+			\endgraf\medskip
+			\endgraf
+			Complex project SE (CU75047)}}
+	
+	\maketitle
+	
+	\pagenumbering{gobble} 		
+	
+	\tableofcontents
+	
+	\newpage
+	
+	\listoffigures
+	
+	\newpage
+	\pagenumbering{arabic}
+	
+	
+	\include{Introduction}
+	
+	\appendix
+	
+	\include{Appendix_1}
+	
+	\bibliographystyle{apalike}
+	
+	\bibliography{Bibliography.bib}
+	
+	
+\end{document}
